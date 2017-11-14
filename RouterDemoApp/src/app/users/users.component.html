@@ -1,0 +1,9 @@
+<div class="col-md-3">
+  <h1>Top Contributors</h1>
+  <ul class="list-group">
+    <li *ngFor="let user of users" [routerLink]="[user.id, 'posts']" [queryParams]="{ userName: user.name }" class="list-group-item"
+      style="cursor: pointer;"> {{user.name}}
+</li>
+</ul>
+</div>
+<router-outlet></router-outlet>

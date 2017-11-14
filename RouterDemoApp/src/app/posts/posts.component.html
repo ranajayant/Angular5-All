@@ -1,0 +1,10 @@
+<div class="col-md-6">
+  <h1> Top posts </h1>
+  <div *ngFor="let post of posts | async" [routerLink]="[post.id, 'comments']"  class="panel panel-default pointer">
+    <div class="panel-heading">{{post.title}}</div>
+    <div class="panel-body">
+      {{post.body}}
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>

@@ -1,0 +1,9 @@
+  <div class="col-sm-6 col-md-4"  *ngFor="let photo of photos | async">
+    <div class="thumbnail">
+      <img src="{{photo.thumbnailUrl}}" alt="...">
+      <div class="caption">
+        <h3>Thumbnail label</h3>
+        <p>{{photo.title}}</p>
+      </div>
+    </div>
+  </div>
